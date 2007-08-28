@@ -50,7 +50,6 @@ Icon=configuration_section.png
 Terminal=false
 Type=Application
 Categories=GTK;X-MandrivaLinux-System-Configuration;Other;
-Encoding=UTF-8
 EOF
 
 #install lang
