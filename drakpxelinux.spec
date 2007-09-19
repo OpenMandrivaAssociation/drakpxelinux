@@ -1,8 +1,8 @@
 Summary:	PXE default file configurator
 Name:		drakpxelinux
 Version:	1.2.0
-Release:        %mkrel 12
-License:	GPL
+Release:        %mkrel 13
+License:	GPLv2+
 Group:		System/Configuration/Other
 URL:		http://cvs.mandriva.com/cgi-bin/cvsweb.cgi/soft/drakpxelinux/
 Source0:	%{name}-%{version}.tar.bz2
@@ -26,19 +26,6 @@ rm -rf %{buildroot}
 
 make prefix=%{buildroot} install 
 
-#menu
-mkdir -p %{buildroot}%{_menudir}
-cat >%{buildroot}%{_menudir}/%{name} <<EOF
-?package(%{name}): \
-command="%{_sbindir}/%{name}" \
-section="System/Configuration/Other" \
-icon="configuration_section.png" \
-needs="x11" \
-title="Drakpxelinux" \
-longtitle="Mandriva Linux Pxelinux configurator" \
-xdg="true"
-EOF
-
 # XDG menu
 install -d %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -46,10 +33,10 @@ cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 Name=Drakpxelinux
 Comment=Mandriva Linux Pxelinux configurator
 Exec=%{_sbindir}/%{name}
-Icon=configuration_section.png
+Icon=configuration_section
 Terminal=false
 Type=Application
-Categories=GTK;X-MandrivaLinux-System-Configuration;Other;
+Categories=GTK;Settings;X-Mandriva-CrossDesktop;
 EOF
 
 #install lang
@@ -75,7 +62,5 @@ rm -rf %{buildroot}
 %{_sysconfdir}/xinetd.d/deployd
 %{_sysconfdir}/xinetd.d/deploy_get_autoinst
 #%{_datadir}/%{name}*
-%{_menudir}/%{name}*
 %{_datadir}/applications/mandriva-%{name}.desktop
-
 
