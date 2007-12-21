@@ -10,6 +10,7 @@ Requires:	perl-Gtk2, perl-MDK-Common, pxe, drakxtools, tftp-server, xinetd, pxel
 Requires(post): desktop-file-utils
 Requires(postun): desktop-file-utils
 Buildarch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Quick configuration of PXE menu parameters. 
