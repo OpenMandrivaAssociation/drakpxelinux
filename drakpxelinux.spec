@@ -3,7 +3,7 @@ Name:		drakpxelinux
 Version:	1.2.0
 Release:        %mkrel 17
 License:	GPLv2+
-Group:		System/Configuration/Network
+Group:		System/Configuration/Other
 URL:		http://cvs.mandriva.com/cgi-bin/cvsweb.cgi/soft/drakpxelinux/
 Source0:	%{name}-%{version}.tar.bz2
 Requires:	perl-Gtk2, perl-MDK-Common, pxe, drakxtools, tftp-server, xinetd, pxelinux
