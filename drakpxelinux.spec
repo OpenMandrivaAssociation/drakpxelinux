@@ -1,7 +1,7 @@
 Summary:	PXE default file configurator
 Name:		drakpxelinux
 Version:	1.2.1
-Release:        %mkrel 2
+Release:        %mkrel 3
 License:	GPLv2+
 Group:		System/Configuration/Other
 URL:		http://cvs.mandriva.com/cgi-bin/cvsweb.cgi/soft/drakpxelinux/
