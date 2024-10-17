@@ -4,7 +4,7 @@ Version:	1.2.1
 Release:	17
 License:	GPLv2+
 Group:		System/Configuration/Other
-Url:		http://cvs.mandriva.com/cgi-bin/cvsweb.cgi/soft/drakpxelinux/
+Url:		https://cvs.mandriva.com/cgi-bin/cvsweb.cgi/soft/drakpxelinux/
 Source0:	%{name}-%{version}.tar.bz2
 Buildarch:	noarch
 
