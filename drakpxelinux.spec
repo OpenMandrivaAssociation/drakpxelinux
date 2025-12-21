@@ -17,6 +17,7 @@ Requires:	tftp-server
 Requires:	xinetd
 Requires(post,postun):	desktop-file-utils
 
+BuildRequires:	make
 %description
 Quick configuration of PXE menu parameters. 
 
